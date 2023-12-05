@@ -144,17 +144,45 @@ switch(valor){
 
 let entrada = prompt("Ingresar un nombre").toUpperCase();
 
-while (entrada != "ESC") {
-  switch (entrada) {
-    case "ANA":
-      alert("HOLA ANA");
-      break;
-    case "JUAN":
-      alert("HOLA JUAN");
-      break;
-    default:
-      alert("¿QUIÉN SOS?");
-      break;
-  }
-  entrada = prompt("Ingresar un nombre");
+//while (entrada != "ESC") {
+  //switch (entrada) {
+  //  case "ANA":
+    //  alert("HOLA ANA");
+   //   break;
+   // case "JUAN":
+   //   alert("HOLA JUAN");
+   //   break;
+  //  default:
+  //    alert("¿QUIÉN SOS?");
+  //    break;
+ // }
+  //entrada = prompt("Ingresar un nombre");
+//}
+
+//ejercicio
+
+for (let i = 5; i >= 0; i-- ){
+    let numero= prompt("Adivina la contraseña");
+    if(numero=== "no mames guey") {
+        alert("Adivinaste!");
+        break;
+    }
+    switch(i){
+        case 1:
+            alert(`intentalo de nuevo, Intentos restantes: ${i}`);
+            break;
+            case 2:
+            alert(`te quedaste cortoo, Intentos restantes: ${i}`);
+            break;
+            case 3:
+            alert(`Te gusta errarle eh!, Intentos restantes: ${i}`);
+            break;
+            case 4:
+            alert(`mmmm, lejos pachi, Intentos restantes: ${i}`);
+            break;
+            default:
+            alert(`En la lonaaaa, Intentos restantes: ${i}`);
+    }
+    
 }
+alert("No tienes mas intentos, mil disculpas capo")
